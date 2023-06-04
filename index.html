@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@600&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <title>fake login</title>
+</head>
+
+<body>
+
+    <div class="wrapper2" id="wrapper">
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="username" id="usernameInput" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="text" id="emailInput" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="passwordInput" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="remember-me">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                </div>
+
+                <button onclick="onRegister()" id="registerButton" class="button-login">Register</button>
+
+                <div class="register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="wrapper" id="wrapperTwo">
+        <div id="loginPage" class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" id="usernameInputs" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="passwordInputs" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="remember-me">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">forget password</a>
+                </div>
+
+                <button onclick="onLogin()" id="loginButton" class="button-login">Login</button>
+
+
+                <div class="register">
+                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="role-container">
+        <h1 class="role" id="kaisar">Anda seorang kaisar</h1>
+        <h1 class="role" id="pMenteri">Anda seorang perdana menteri</h1>
+        <h1 class="role" id="menteri">Anda seorang menteri</h1>
+        <h1 class="role" id="petarunk">Anda seorang petarunk</h1>
+        <h1 class="role" id="npcStudent">Anda seorang npc student</h1>
+        <h1 class="role" id="unrole">lu npc sat gausah login</h1>
+        <br>
+        <button onclick="onLogout()" id="logoutButton" class="button-logout">Log Out</button>
+    </div>
+
+
+
+
+    <!-- js -->
+    <script src="script.js"></script>
+
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
